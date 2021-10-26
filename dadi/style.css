@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(78, 99, 204);
+    color: white;
+}
+.tabella{
+    text-align: center;
+    border: white solid 2px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+#risultato{
+    font-size: 100px;
+}
