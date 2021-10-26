@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(78, 99, 204);
+    color: white;
+}
+
+.emailRisultato{
+    text-align: center;
+    border: white solid 2px;
+}
