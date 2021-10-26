@@ -1,22 +1,19 @@
-// far inserire all'utente una mail e controllare se è nell'array, che contiene quelle valide.
-var btn = document.getElementById('btn');
-var listaMail = ["pippo@gmail.com", "pippo1@gmail.com", "andrea@gmail.com", "pippo3@gmail.com"];
-var emailRisultato = document.getElementById('emailRisultato');
+var listaMail= ["antonio@gmail.com", "matteo@gmail.com", "lorenzo@gmail.com", "mario@gmail.com", "@gmail.com"];
 
-btn.addEventListener("click",function () {
-var emailInserita = document.getElementById('emailPrincipale').value;
-var emailTrovata = false;
+// chiedo mail all'utente
+var userMail = prompt("Inserisci la tua mail");
 
-for (var i = 0; i < listaMail.length; i++) {
-    if (emailInserita == listaMail[i]) {
-        emailTrovata = true;
+var trovato = false
+//controllo se esiste la mail
+for (let i = 0; i < listaMail.length; i++) {
+    
+    if(listaMail[i] === userMail ) {
+        trovato = true;
     }
 }
 
-if (emailTrovata == true) {
-    emailRisultato.innerHTML = "La tua email è presente in elenco";
-} else {
-    emailRisultato.innerHTML = "La tua email non è presente in elenco";
+if (trovato === true) {
+        document.getElementById("emailRisultato").innerHTML = "Mail trovata!"
+}else {
+        document.getElementById("emailRisultato").innerHTML = "Mail non trovata!"
 }
-
-});
